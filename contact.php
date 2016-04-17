@@ -1,0 +1,62 @@
+<?php
+	require_once('load.php');
+	$logged = $j->checkLogin();
+	
+	if ( $logged == false ) {
+		
+		//Redirect to the home page
+		header("Location: index.php");
+		exit;
+	}
+?>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<link rel="stylesheet" href="css/divs.css">
+	<link rel="stylesheet" href="css/buttons.css">
+	
+	
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Contact Me</title>
+    </head>
+    <body style="text-align: center">
+        
+        <div id="background">
+        	<div id="header">
+        	 <header>
+                <div>
+            
+                    <h2>DeCaltaldo Editing</h2>
+                    </div>
+            <nav>
+            		<a href="login.php?action=logout">Logout</a>
+                    <a href="index.php">Home</a>
+                    <a href="about_us.php">About Us</a>
+                    
+                    
+            </nav>
+                </header>
+               </div> 
+        	<div id="content">
+        		<h3>Contact Page</h3>
+        		
+ 			   <form  action="phpmailer.php" method="POST" enctype="multipart/form-data"> 
+   				 <input type="hidden" name="action" value="submit"> 
+  				 Your name:<br> 
+   				 <input name="name" type="text" value="" size="30"/><br> 
+   				 Your email:<br> 
+    			 <input name="email" type="text" value="" size="30"/><br> 
+  				  Your message:<br> 
+    			<textarea name="message" rows="7" cols="30"></textarea><br> 
+    			<input type="submit" value="Send email"/> 
+   				</form> 
+
+        	</div>
+        	<footer> <p>Posted by: Michael Bertoncini</p>
+  			<p>Contact information: <a href="mailto:mbertoncini@student.framingham.edu">mbertoncini@student.framingham.edu</a>.</p>
+        	</footer>
+        	</div>	
+        	
+        
+    </body>
+</html>
+<?php ?>

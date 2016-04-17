@@ -1,0 +1,123 @@
+html{
+	width:100%;
+	height: 100%;
+}
+body{
+	text-align: center;
+	width:100%;
+	height: 100%;
+	margin: 0px;
+	}
+
+#background {
+   position: relative;
+   width: 100%;
+   height: 100%;
+}
+#background:after {
+    content : "";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    
+    background-image: url("../img/background.jpg"); 
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+    opacity : 0.4;
+    z-index: -1;
+}
+#header{
+	
+	height:50px;
+	width: 60%;
+	min-width: 500px;
+	padding: 0px;
+	margin: auto;
+	margin-top: 10px;
+	background-color: #ff5050;
+	
+}
+
+nav a{
+	height: 40px;
+	width: 15%;
+	color: #FFFFFF;
+	float: right;
+	
+	padding-top:10px;
+	text-decoration: none;
+	text-align: center;
+	vertical-align: middle;
+	font-size:30px;
+	font-weight:bold;
+    font-family: Sans-serif;
+    
+}
+a:hover{
+	background-color: #6495ED;
+}
+
+
+#content{
+	height:60%;
+	width: 60%;
+	min-width: 500px;
+	padding: 0px;
+	padding-top: 1px;
+	margin: auto;
+	margin-top: 10px;
+	color: white;
+	background-color: #ff5050;
+	
+}
+#container{
+	height: 100%;
+	width: 100%;
+	margin: auto;
+	padding: 0px;
+	display: inline-block;
+	vertical-align: top;
+}
+.reglog{
+height: 75%;
+width: 45%;	
+margin: 2%;
+padding: 1px;
+border-style: solid;
+display: inline-block;
+vertical-align: top;
+
+
+}
+
+footer{
+	height:auto;
+	width: 60%;
+	min-width: 500px;
+	padding: 0px;
+	margin: auto;
+	margin-top: 10px;
+	
+	background-color: #ff5050;
+}
+/*********************************
+ * Text CSS
+ * This area is for text manipulation only, ONLY
+ *  
+ */
+
+header h2
+    {
+            
+            font-size:30px;
+            color:#FFFFFF;
+            
+            font-weight:bold;
+            font-family: Sans-serif;
+            float:left;
+            margin-top:10px;
+            margin-left:20px;
+            text-decoration:none;
+    }
